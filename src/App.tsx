@@ -1,19 +1,17 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import CharactersPage from "./components/characterList";
+import Navbar from "./components/navbar";
+import "./App.css";
 
-import BlueButton from './BlueButton';
-import RedButton from './RedButton';
-import YellowButton from './YellowButton';
-
-
-const App = () => (
-  <>
-    <h2>Buttons</h2>
-    <BlueButton>En blå knapp</BlueButton>
-    <RedButton>En röd knapp</RedButton>
-    <YellowButton>En gul knapp</YellowButton>
-  </>
-)
+function App() {
+  return (
+    <div className="app">
+      <Navbar />
+      <div className="container">
+        <CharactersPage />
+      </div>
+    </div>
+  );
+}
 
 export default App;
