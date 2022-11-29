@@ -2,8 +2,8 @@ import React from 'react';
 import { Button } from '../types/buttons';
 import { StyledButton } from '../utils/styles';
 
-const ButtonComponent = ( {children, bgcolor,color, onClick, disabled=true }: Button) => (
-    <StyledButton bgcolor={bgcolor} color={color} onClick={onClick} disabled={disabled}>{children}</StyledButton>
+const ButtonComponent = ( {props}:{props: Button}) => (
+    <StyledButton bgcolor={props.bgcolor} color={props.color} onClick={props.onClick}>{props.children}</StyledButton>
 )
 
 export default ButtonComponent;
